@@ -35,4 +35,4 @@ For any suggestions or errors encountered, reach me at: kyletrippk.com
 Copyright (c) 2020 **Kyle Kibet**
 
 ### Image
-*[Landing Page](public/images/landing-page.png)
+*[Landing Page](./src/main/resources/public/images/landing-page.png)
