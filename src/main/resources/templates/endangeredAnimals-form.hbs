@@ -1,0 +1,41 @@
+{{#partial "title"}}
+    Report an endangered animal
+{{/partial}}
+
+{{#partial "content"}}
+    <!-- Endangered models.Animals form -->
+    <div class="endangered-form">
+        <form action="/endangered-species/new" method="post">
+            <div class="form-group">
+                <label for="name">Animal Name</label>
+                <input class="form-control" id="name" name="name" type="text" placeholder="Animal Name">
+            </div>
+            <div class="form-group">
+                <label for="health">Animal Health</label>
+                <input class="form-control" id="health" name="health" type="text" placeholder="Animal Health">
+            </div>
+            <div class="form-group">
+                <label for="age">Animal age</label>
+                <input class="form-control" id="age" name="age" type="text" placeholder="Animal Age">
+            </div>
+            <div class="form-group">
+                <label for="ranger">Ranger Name</label>
+                <input class="form-control" id="ranger" name="ranger" type="text" placeholder="Ranger Name">
+            </div>
+            <div class="form-group">
+                <label for="location">Choose Location</label>
+                <select class="form-control" name="location" id="location">
+                    <option value="zone-a">Zone A</option>
+                    <option value="zone-b">Zone B</option>
+                    <option value="zone-c">Zone C</option>
+                    <option value="zone-d">Zone D</option>
+                </select>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-secondary btn-lg">Sight Animal</button>
+            </div>
+        </form>
+    </div>
+{{/partial}}
+
+{{> layout.hbs}}

@@ -4,61 +4,30 @@
 
 {{#partial "content"}}
     <!-- models.Animals form (Not endangered)-->
-    <form>
-        <div class="form-group">
-            <label for="name">Animal Name</label>
-            <input class="form-control" id="name" name="name" type="text" placeholder="Animal Name">
-        </div>
-        <div class="form-group">
-            <label for="ranger">Ranger Name</label>
-            <input class="form-control" id="ranger" name="ranger" type="text" placeholder="Ranger Name">
-        </div>
-        <div class="form-group">
-            <select class="form-control">
-                <option>Zone A</option>
-            </select>
-            <select class="form-control">
-                <option>Zone B</option>
-            </select>
-            <select class="form-control">
-                <option>Zone C</option>
-            </select>
-            <select class="form-control">
-                <option>Zone D</option>
-            </select>
-        </div>
-    </form>
-    <!-- Endangered models.Animals form -->
-    <form>
-        <div class="form-group">
-            <label for="name">Animal Name</label>
-            <input class="form-control" id="name" name="name" type="text" placeholder="Animal Name">
-        </div>
-        <div class="form-group">
-            <label for="health">Animal Health</label>
-            <input class="form-control" id="health" name="health" type="text" placeholder="Animal Health">
-        </div>
-        <div class="form-group">
-            <label for="age">Animal age</label>
-            <input class="form-control" id="age" name="age" type="number" placeholder="Animal Age">
-        </div>
-        <div class="form-group">
-            <label for="ranger">Ranger Name</label>
-            <input class="form-control" id="ranger" name="ranger" type="text" placeholder="Ranger Name">
-        </div>
-        <div class="form-group">
-            <select class="form-control">
-                <option>Zone A</option>
-            </select>
-            <select class="form-control">
-                <option>Zone B</option>
-            </select>
-            <select class="form-control">
-                <option>Zone C</option>
-            </select>
-            <select class="form-control">
-                <option>Zone D</option>
-            </select>
-        </div>
-    </form>
+    <div class="animal-form">
+        <form action="/animal-form/new" method="post">
+            <div class="form-group">
+                <label for="name">Animal Name</label>
+                <input class="form-control" id="name" name="name" type="text" placeholder="Animal Name">
+            </div>
+            <div class="form-group">
+                <label for="ranger">Ranger Name</label>
+                <input class="form-control" id="ranger" name="ranger" type="text" placeholder="Ranger Name">
+            </div>
+            <div class="form-group">
+                <label for="location">Choose Location</label>
+                <select class="form-control" name="location" id="location">
+                    <option value="zone-a">Zone A</option>
+                    <option value="zone-b">Zone B</option>
+                    <option value="zone-c">Zone C</option>
+                    <option value="zone-d">Zone D</option>
+                </select>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-secondary btn-lg">Sight Animal</button>
+            </div>
+        </form>
+    </div>
 {{/partial}}
+
+{{> layout.hbs}}
