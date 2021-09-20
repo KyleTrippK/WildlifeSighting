@@ -1,0 +1,30 @@
+
+body{
+ background-image: url("/images/ray-hennesy.jpg");
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+nav{
+    margin: 2% 3% 0% 0%;
+    float: right;
+}
+.mainHeading{
+    font-size: 54px;
+}
+.heading, .endangered-form, .animal-form{
+    clear: right;
+}
+.selections{
+    margin: 20% 0% 0% 0%;
+}
+.endangered-form, .animal-form{
+    width: 40%;
+    margin: auto;
+}
+.animal-form{
+    padding-top: 10%;
+}
+.endangered-form{
+    padding-top: 7%;
+}
+
